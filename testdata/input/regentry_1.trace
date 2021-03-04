@@ -1,0 +1,8 @@
+{
+  "trace": {
+    "registryEntry": {
+      "key": "/Software/Microsoft/Windows/CurrentVersion/Watermark/Timestamp",
+      "type" : "BIN"
+    }
+  }
+}
