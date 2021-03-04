@@ -2,8 +2,7 @@
 # file used by distutils to create a distributable package and generate requirements.txt
 from setuptools import setup
 
-
-package_name = "example_chat_plugin"
+package_name = "Registry_FILETIME_plugin"
 version_string = "0.1.0"
 
 dependencies = [
@@ -16,8 +15,9 @@ setup(
     name=package_name,
     version=version_string,
     author='Netherlands Forensic Institute',
-    author_email='hansken@holmes.nl',
-    description='Example Hansken Extraction Plugin: chat',
+    author_email='schramp@holmes.nl',
+    description='Hansken Extraction Plugin: Registry FILETIME, '
+                'the plugin parses registry values with 8 byte BIN values that decode to a date between 2010 and 2022 ',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: Apache Software License',
