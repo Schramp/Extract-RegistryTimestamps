@@ -54,7 +54,7 @@ class RegistryFiletimePlugin(ExtractionPlugin):
             return
         with trace.open() as thedatahandle:
             thedata = thedatahandle.read(8)
-            if len(thedata) == 8:
+            if 8 == len(thedata):
                 filetime = struct.unpack("Q", thedata)[0]
                 thedate = filetime_to_dt(filetime)
                 if filetime > 0 and not thedate is None and thedate.year > 2010 and thedate.year < 2022:
