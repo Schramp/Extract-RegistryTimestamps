@@ -57,7 +57,7 @@ class RegistryFiletimePlugin(ExtractionPlugin):
             if len(thedata) == 8:
                 filetime = struct.unpack("Q", thedata)[0]
                 thedate = filetime_to_dt(filetime)
-                if filetime > 0 and not thedate is None and thedate.year > 2010 and thedate.year < 2022:
+                if filetime > 0 and not thedate is None and thedate.year > 2010 and thedate.year < 2026:
                     trace.update("event.createdOn", thedate)
                     trace.update("event.application", "registrytimestamp")
                     keyname = trace.get("registryEntry.key")
